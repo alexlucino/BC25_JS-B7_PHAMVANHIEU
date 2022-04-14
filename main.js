@@ -35,8 +35,8 @@ document.getElementById("btnB2").onclick = function () {
 
 //Bài 3:
 document.getElementById("btnB3").onclick = function () {
-  var minNum = 9999999999;
-  for (i = 0; i < numberArray.length; i++) {
+  var minNum = numberArray[0];
+  for (i = 1; i < numberArray.length; i++) {
     if (numberArray[i] < minNum) {
       minNum = numberArray[i];
     }
@@ -46,8 +46,8 @@ document.getElementById("btnB3").onclick = function () {
 
 //Bài 4:
 document.getElementById("btnB4").onclick = function () {
-  var minNum = 9999999999;
-  for (i = 0; i < numberArray.length; i++) {
+  var minNum = numberArray[0];
+  for (i = 1; i < numberArray.length; i++) {
     if (numberArray[i] % 2 === 0) {
       if (numberArray[i] < minNum) {
         minNum = numberArray[i];
